@@ -1,205 +1,458 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/images/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/images/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#ffc40d" />
-    <meta name="msapplication-config" content="/images/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alejandro Marco</title>
-    <!--Favicon -->
-    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
-    <!--Stylesheets-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/custom.css" />
-    <!--Script-->
-    <script type="text/javascript" src="scripts/script.js" async></script>
-  </head>
-  <body>
-    <section class="hero is-fullheight">
-      <div class="hero-head">
-        <a class="anchor" name="home"></a>
-        <nav class="navbar is-spaced">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="#home">
-                <img src="/images/logodark.svg" width="80" alt="Logo" />
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#ffc40d" />
+  <meta name="msapplication-config" content="/images/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alejandro Marco</title>
+  <!--Favicon -->
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/custom.css" />
+  <!--Script-->
+  <script type="text/javascript" src="scripts/script.js" async></script>
+</head>
+
+<body>
+  <section class="hero is-fullheight">
+    <div class="hero-head">
+      <a class="anchor" name="home"></a>
+      <nav class="navbar is-spaced">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#home">
+              <img src="/images/logodark.svg" width="80" alt="Logo" />
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+          <div id="navbarMenu" class="navbar-menu is-shadowless">
+            <div class="navbar-end">
+              <a class="navbar-item" href="#about">
+                <span>About</span>
               </a>
-              <span class="navbar-burger burger" data-target="navbarMenu">
-                <span></span>
-                <span></span>
-                <span></span>
+              <a class="navbar-item" href="#projects">
+                <span>Projects</span>
+              </a>
+              <span class="navbar-item" href="#contact">
+                <a href="mailto:alexmarco@gmx.co.uk" id="hello-button" class="button is-dark is-rounded has-shadow">
+                  <span>👋 Say Hi!</span>
+                </a>
               </span>
             </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-            <div id="navbarMenu" class="navbar-menu is-shadowless">
-              <div class="navbar-end">
-                <a class="navbar-item" href="#about">
-                  <span>About</span>
-                </a>
-                <!-- <a class="navbar-item" href="#projects">
-                                    <span>Projects</span>
-                            </a> -->
-                <span class="navbar-item" href="#contact">
-                  <a
-                    href="mailto:alexmarco@gmx.co.uk"
-                    id="hello-button"
-                    class="button is-dark is-rounded has-shadow"
-                  >
-                    <span>👋 Say Hi!</span>
-                  </a>
-                </span>
+    <!-- Main content -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <!-- Image -->
+        <div class="column is-6 is-offset-3">
+          <figure class="image container is-128x128">
+            <img class="is-rounded" src="images/alejandro.gif" style="transform: scale(1.5);" />
+          </figure>
+        </div>
+        <!-- Space just showed in mobile and tablet -->
+        <div class="section is-hidden-desktop"></div>
+        <!-- Greeting and descrpitsion-->
+        <div class="column is-6 is-offset-3">
+          <h1 class="title">
+            HEY,
+          </h1>
+          <h2 class="subtitle">
+            I'm Alejandro Marco, a softwaree engineer passionate about
+            creating stuff. Currently working at
+            <a href="https://taxiforemail.com" class="link" target="_blank">@taxiforemail</a>
+          </h2>
+        </div>
+        <!-- Social Bar-->
+        <div class="column is-6 is-offset-3">
+          <span class="icon is-medium">
+            <a href="https://github.com/AlejandroMI" target="_blank" class="fab fa-2x fa-github has-text-dark"></a>
+          </span>
+          <span class="icon is-medium">
+            <a href="https://twitter.com/aljndrmrcibnz" target="_blank" class="fab fa-2x fa-twitter has-text-dark"></a>
+          </span>
+          <span class="icon is-medium">
+            <a href="https://www.linkedin.com/in/alejandromarc" target="_blank"
+              class="fab fa-2x fa-linkedin has-text-dark"></a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Footer -->
+    <div class="hero-foot">
+      <a class="container has-text-centered" href="#about">
+        <div class="bounce">
+          <img width="40" height="40" alt=""
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="hero b1 is-medium">
+    <a class="anchor" name="about"></a>
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <!--Title-->
+        <p class="is-uppercase is-size-7">So let's talk</p>
+        <h1 class="title">About Me</h1>
+        <br />
+
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <p>
+              An engineer by training, I found my passion for design and
+              building products after joined a web developer bootcamp. I'm
+              curious by nature and optimistic.
+            </p>
+            <!-- BUTTON -->
+            <br />
+            <a href="https://www.notion.so/alejandromarco/Alejandro-Marco-f80bf5509cbb4644b6899c3a1b180161"
+              target="._blank" class="button is-dark is-rounded has-shadow">
+              📄 My Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-medium is-light">
+    <a class="anchor" name="projects"></a>
+
+    <div class="hero-head">
+    </div>
+    <!-- Projects Section-->
+    <div class="hero-body">
+      <div class="container">
+
+        <!-- TITLE-->
+        <div class="has-text-centered">
+          <p class="is-uppercase is-size-7">Take a look to</p>
+          <h1 class="title">My Projects</h1>
+          <br>
+        </div>
+        <!-- GRID -->
+        <div class="columns is-multiline">
+          <div class="column is-4">
+            <!-- Card 1 -->
+            <!-- Card 4 -->
+            <div class="card rounded">
+
+              <!-- Card Header -->
+              <div class="card-image">
+                <figure class="image is-5by3">
+                  <img class="rounded"
+                    src="https://images.unsplash.com/photo-1495510096779-5fbe73258c83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80"
+                    alt="Example">
+              </div>
+
+              <!--Card Content-->
+              <div class="card-content">
+                <!-- Card Title -->
+                <div class="media">
+                  <!-- Icon or Logo -->
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://i.ibb.co/3TD4pgp/360-logo.png" alt="Projecto Logo">
+                    </figure>
+                  </div>
+                  <!-- Title and description -->
+                  <div class="media-content">
+                    <p class="title is-size-4">360 Robot</p>
+                    <p class="subtitle is-size-6">A 4x4 robot capable of record 360º videos remotely</p>
+                  </div>
+                </div>
+                <!--Card Description -->
+                <div class="content">
+                  <hr>
+                  <p>Controlling a 360º camera with the aim of obtaining videos at eye level
+                    without the need of a camera operator.</p>
+                </div>
+                <!-- Key Points -->
+                <div class="content">
+                  <p class="has-text-weight-semibold">Key Points</p>
+                  <ul>
+                    <li>Remote control via a web app</li>
+                    <li>Designed to be replicated with a very low budget</li>
+                    <li>In collaboration with <a href="http://iim.webs.upv.es/">IIM UPV</a></li>
+                    <li>Code available open source</li>
+                  </ul>
+                </div>
+                <!-- Tech and tools -->
+                <div class="content">
+                  <p class="has-text-weight-semibold">Tech and Tools</p>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-cplusplus-plain" alt="cplusplus" title="C++"></i>
+                  </span>
+                </div>
+                <!--Card Buttons -->
+                <div class="content buttons">
+                  <a class="button is-dark is-rounded" href="https://sites.google.com/view/360robot"
+                    target="._blank">Website</a>
+                  <a class="button is-rounded" href="https://github.com/MakersGandia/360Robot" target="._blank">Source
+                    Code</a>
+                </div>
               </div>
             </div>
+            <!-- Card 4 -->
           </div>
-        </nav>
-      </div>
+          <div class="column is-4">
+            <!-- Card 2 -->
+            <div class="card rounded">
 
-      <!-- Main content -->
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <!-- Image -->
-          <div class="column is-6 is-offset-3">
-            <figure class="image container is-128x128">
-              <img
-                class="is-rounded"
-                src="images/alejandro.gif"
-                style="transform: scale(1.5);"
-              />
-            </figure>
-          </div>
-          <!-- Space just showed in mobile and tablet -->
-          <div class="section is-hidden-desktop"></div>
-          <!-- Greeting and descrpitsion-->
-          <div class="column is-6 is-offset-3">
-            <h1 class="title">
-              HEY,
-            </h1>
-            <h2 class="subtitle">
-              I'm Alejandro Marco, a softwaree engineer passionate about
-              creating stuff. Currently working at
-              <a href="https://taxiforemail.com" class="link" target="_blank"
-                >@taxiforemail</a
-              >
-            </h2>
-          </div>
-          <!-- Social Bar-->
-          <div class="column is-6 is-offset-3">
-            <span class="icon is-medium">
-              <a
-                href="https://github.com/AlejandroMI"
-                target="_blank"
-                class="fab fa-2x fa-github has-text-dark"
-              ></a>
-            </span>
-            <span class="icon is-medium">
-              <a
-                href="https://twitter.com/aljndrmrcibnz"
-                target="_blank"
-                class="fab fa-2x fa-twitter has-text-dark"
-              ></a>
-            </span>
-            <span class="icon is-medium">
-              <a
-                href="https://www.linkedin.com/in/alejandromarc"
-                target="_blank"
-                class="fab fa-2x fa-linkedin has-text-dark"
-              ></a>
-            </span>
-          </div>
-        </div>
-      </div>
+              <!-- Card Header -->
+              <div class="card-image">
+                <figure class="image is-5by3">
+                  <img class="rounded" src="https://i.ibb.co/3smKWn8/alpaca-theme.png" alt="Example">
+              </div>
 
-      <!-- Hero Footer -->
-      <div class="hero-foot">
-        <a class="container has-text-centered" href="#about">
-          <div class="bounce">
-            <img
-              width="40"
-              height="40"
-              alt=""
-              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4="
-            />
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="hero b1 is-medium">
-      <a class="anchor" name="about"></a>
-
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <!--Title-->
-          <p class="is-uppercase is-size-7">So let's talk</p>
-          <h1 class="title">About Me</h1>
-          <br />
-
-          <div class="columns">
-            <div class="column is-8 is-offset-2">
-              <p>
-                An engineer by training, I found my passion for design and
-                building products after joined a web developer bootcamp. I'm
-                curious by nature and optimistic.
-              </p>
-              <!-- BUTTON -->
-              <br />
-              <a
-                href="https://www.notion.so/alejandromarco/Alejandro-Marco-f80bf5509cbb4644b6899c3a1b180161"
-                target="._blank"
-                class="button is-dark is-rounded has-shadow"
-              >
-                📄 My Resume</a
-              >
+              <!--Card Content-->
+              <div class="card-content">
+                <!-- Card Title -->
+                <div class="media">
+                  <!-- Icon or Logo -->
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://i.ibb.co/brnP3Nc/alpaca-logo.png" alt="AM Logo">
+                    </figure>
+                  </div>
+                  <!-- Title and description -->
+                  <div class="media-content">
+                    <p class="title is-size-4">Alpaca Theme</p>
+                    <p class="subtitle is-size-6">A personal website template</p>
+                  </div>
+                </div>
+                <!--Card Description -->
+                <div class="content">
+                  <hr>
+                  <p>I built my website from scratch and is open for everybody to
+                    use it as a template and ready for deployment.</p>
+                </div>
+                <!-- Key Points -->
+                <div class="content">
+                  <p class="has-text-weight-semibold">Key Points</p>
+                  <ul>
+                    <li>Integrated with modern CSS frameworks</li>
+                    <li>Easy setup</li>
+                  </ul>
+                </div>
+                <!-- Tech and tools -->
+                <div class="content">
+                  <p class="has-text-weight-semibold">Tech and Tools</p>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-html5-plain" alt="html5" title="HTML 5"></i>
+                  </span>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-css3-plain" alt="css3" title="CSS3"></i>
+                  </span>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-javascript-plain" alt="javascript" title="JavaScript"></i>
+                  </span>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-nodejs-plain" alt="node.js" title="Node.js"></i>
+                  </span>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-git-plain" alt="git" title="Git"></i>
+                  </span>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-sass-plain" alt="sass" title="Sass"></i>
+                  </span>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-gulp-plain" alt="gulp" title="Gulp"></i>
+                  </span>
+                </div>
+                <!--Card Buttons -->
+                <div class="content buttons">
+                  <a class="button is-dark is-rounded" href="https://github.com/AlejandroMI/personal-website"
+                    target="._blank">Source Code</a>
+                </div>
+              </div>
             </div>
+            <!-- Card -->
+            <br>
+            <!-- Card 5 -->
+            <div class="card rounded">
+
+              <!-- Card Header -->
+              <div class="card-image">
+                <figure class="image is-5by3">
+                  <img class="rounded" src="https://i.ibb.co/3Y9jG61/ARDUINO.png" alt="Example">
+              </div>
+
+              <!--Card Content-->
+              <div class="card-content">
+                <!-- Card Title -->
+                <div class="media">
+                  <!-- Icon or Logo -->
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://i.ibb.co/ggBxdgs/logo-makers-gandia.png" alt="Projecto Logo">
+                    </figure>
+                  </div>
+                  <!-- Title and description -->
+                  <div class="media-content">
+                    <p class="title is-size-4">Arduino Workshop</p>
+                    <p class="subtitle is-size-6">A simple Arduino workshop for large groups</p>
+                  </div>
+                </div>
+                <!--Card Description -->
+                <div class="content">
+                  <hr>
+                  <p>Created in collaboration with Makers UPV, was an incredible success in the campus
+                    and is open for everybody to try it</p>
+                </div>
+                <!-- Key Points -->
+                <div class="content">
+                  <p class="has-text-weight-semibold">Key Points</p>
+                  <ul>
+                    <li>Designed by modules to adjust group size</li>
+                    <li>+60 students attended</li>
+                    <li>Code available open source</li>
+                  </ul>
+                </div>
+                <!-- Tech and tools -->
+                <div class="content">
+                  <p class="has-text-weight-semibold">Tech and Tools</p>
+                  <span class="icon is-medium has-text-grey-lighter is-size-3">
+                    <i class="devicon-cplusplus-plain" alt="cplusplus" title="C++"></i>
+                  </span>
+                </div>
+                <!--Card Buttons -->
+                <div class="content buttons">
+                  <a class="button is-dark is-rounded"
+                    href="https://drive.google.com/open?id=1S8jHjnU3E-Z_rHf2Ym64qHZ4d-WjMYfR" target="._blank">Files</a>
+                  <a class="button is-rounded" href="https://drive.google.com/open?id=1Ql_qKN7a0qEVQ-midxP9dZWWUalOBH6q"
+                    target="._blank">View Slides</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+          </div>
+          <div class="column is-4">
+            <!-- Card 3 -->
+            <div class="card rounded">
+
+              <!-- Card Header -->
+              <div class="card-image">
+                <figure class="image is-5by3">
+                  <img class="rounded" src="https://i.ibb.co/VHyp2VW/cpsc.png" alt="Example">
+              </div>
+
+              <!--Card Content-->
+              <div class="card-content">
+                <!-- Card Title -->
+                <div class="media">
+                  <!-- Icon or Logo -->
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://i.ibb.co/VmLTP16/compphot.png" alt="Projecto Logo">
+                    </figure>
+                  </div>
+                  <!-- Title and description -->
+                  <div class="media-content">
+                    <p class="title is-size-4">Dual Lens</p>
+                    <p class="subtitle is-size-6">An approachment to computational photography</p>
+                  </div>
+                </div>
+                <!--Card Description -->
+                <div class="content">
+                  <hr>
+                  <p>An algorithm created to achieve shallow depth-of-field images
+                    using Matlab and a dual lens system.</p>
+                </div>
+                <!-- Key Points -->
+                <div class="content">
+                  <p class="has-text-weight-semibold">Key Points</p>
+                  <ul>
+                    <li>Depth map extraction to achieve a bokeh effect</li>
+                    <li>Face detection for the measure of people distances</li>
+                  </ul>
+                </div>
+                <!-- Tech and tools -->
+                <div class="content">
+                  <p class="has-text-weight-semibold">Tech and Tools</p>
+                  <span class="icon is-medium is-size-3">
+                    <img src="/images/matlab-icon.svg" alt="matlab" title="Matlab"></img>
+                  </span>
+                </div>
+                <!--Card Buttons -->
+                <div class="content buttons">
+                  <a class="button is-dark is-rounded"
+                    href="https://www.researchgate.net/publication/324165368_An_approachment_to_computational_photography_Achieving_shallow_depth-of-field_images_using_Matlab_and_a_dual_lense_system"
+                    target="._blank">View Document</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <br>
+            <!-- Card 6 -->
+
           </div>
         </div>
+
+        <!-- Grid 2 End -->
+
       </div>
-    </section>
+    </div>
+    <!-- Projects Section-->
 
     <footer class="footer is-light">
       <div class="content has-text-centered">
-        <p class="is-7">
-          Check the
-          <a href="https://github.com/AlejandroMI/personal-website"
-            >source code</a
-          >.
+        <!-- Social Bar-->
+        <div class="column is-6 is-offset-3">
+          <span class="icon is-medium">
+            <a href="https://github.com/AlejandroMI" target="_blank" class="fab fa-2x fa-github has-text-dark"></a>
+          </span>
+          <span class="icon is-medium">
+            <a href="https://twitter.com/aljndrmrcibnz" target="_blank" class="fab fa-2x fa-twitter has-text-dark"></a>
+          </span>
+          <span class="icon is-medium">
+            <a href="https://www.linkedin.com/in/alejandromarc" target="_blank"
+              class="fab fa-2x fa-linkedin has-text-dark"></a>
+          </span>
+        </div>
+        <br>
+        <a class="has-text-link"  href="#about">
+          About
+        </a>
+         | 
+        <a class="has-text-link"  href="#projects">
+          Projects
+        </a>
+         |
+        <a class="has-text-link" href="mailto:alexmarco@gmx.co.uk" >
+          Contact
+        </a>
+        <p>
+        Made by <strong>Alejandro Marco</strong>.
         </p>
+    
       </div>
     </footer>
-  </body>
+</body>
+
 </html>

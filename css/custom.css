@@ -4,42 +4,48 @@
 .banner {
   background: center no-repeat;
   background-size: cover;
-  background-image:
-    -webkit-linear-gradient(280deg, rgba(0,0,0,0) 45.9%, #FFFFFF 46%),
+  background-image: -webkit-linear-gradient(
+      280deg,
+      rgba(0, 0, 0, 0) 45.9%,
+      #ffffff 46%
+    ),
     url(../images/background.jpg);
 }
 
 .b1 {
-background-image:
-  -webkit-linear-gradient(270deg, #FFFFFF, #F5F5F5 70%);
+  background-image: -webkit-linear-gradient(270deg, #ffffff, #f5f5f5 70%);
 }
 
-.is-transparent{
-  background:transparent;
+.is-transparent {
+  background: transparent;
 }
 
 /* Properties */
-.has-shadow{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+.has-shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.has-shadow:hover{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+.has-shadow:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.rounded{
+.rounded {
   border-radius: 6px;
 }
 
 /* Animations */
 .bounce {
-	-moz-animation: bounce 3s infinite;
-	-webkit-animation: bounce 3s infinite;
-	animation: bounce 3s infinite;
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
 @-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
@@ -53,7 +59,11 @@ background-image:
   }
 }
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -67,7 +77,11 @@ background-image:
   }
 }
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -86,5 +100,3 @@ background-image:
     transform: translateY(-15px);
   }
 }
-
- 
