@@ -37,12 +37,12 @@
             <a class="navbar-item" href="#home">
               <img src="/images/logodark.svg" width="80" alt="Logo" />
             </a>
-            <a class="navbar-item" href="#about">
+         <!--    <a class="navbar-item hidden" href="#about">
                 <span>About</span>
             </a>
-            <a class="navbar-item" href="#projects">
+            <a class="navbar-item hidden" href="#projects">
                 <span>Projects</span>
-            </a>
+            </a> -->
           </div>
 
           <div id="navbarMenu" class="navbar-menu is-shadowless">
@@ -92,6 +92,10 @@
             <a href="https://www.linkedin.com/in/alejandromarc" target="_blank"
               class="fab fa-2x fa-linkedin has-text-dark"></a>
           </span>
+          <span class="icon is-medium">
+            <a href="https://www.youtube.com/channel/UCWJ1RJZHmVxlcnjNXtRt24Q" target="_blank"
+              class="fab fa-2x fa-youtube has-text-dark"></a>
+          </span>
         </div>
         <div class="column is-6 is-offset-3 is-hidden-desktop">
           <a href="mailto:hi@alejandromarco.com" id="hello-button" class="button is-dark is-rounded has-shadow">
@@ -102,7 +106,7 @@
     </div>
 
     <!-- Hero Footer -->
-    <div class="hero-foot">
+    <div class="hero-foot hidden">
       <a class="container has-text-centered" href="#about">
         <div class="bounce">
           <img width="40" height="40" alt=""
@@ -111,8 +115,7 @@
       </a>
     </div>
   </section>
-
-  <section class="hero b1 is-medium">
+  <section class="hero b1 is-medium hidden">
     <a class="anchor" name="about"></a>
 
     <div class="hero-body">
@@ -142,7 +145,7 @@
     </div>
   </section>
 
-  <section class="hero is-medium is-light">
+  <section class="hero is-medium is-light hidden">
     <a class="anchor" name="projects"></a>
 
     <div class="hero-head">
@@ -421,8 +424,9 @@
       </div>
     </div>
     <!-- Projects Section-->
-
-    <footer class="footer is-light">
+  </section>
+  
+    <footer class="footer is-light hidden">
       <div class="content has-text-centered">
         <!-- Social Bar-->
         <div class="column is-6 is-offset-3">
@@ -455,6 +459,7 @@
     
       </div>
     </footer>
+  
 </body>
 
 </html>
