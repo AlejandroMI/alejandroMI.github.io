@@ -34,6 +34,10 @@
   border-radius: 6px;
 }
 
+.mr-1 {
+  margin-right: 4px;
+}
+
 /* Animations */
 .bounce {
   -moz-animation: bounce 3s infinite;
